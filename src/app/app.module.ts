@@ -4,9 +4,10 @@ import { AppRoutingModule } from './app-routing.module'
 
 import { AppComponent } from './app.component'
 import { CoreModule } from './core/core.module'
+import { LoginModule } from './modules/login/login.module'
 
 @NgModule({
-  imports: [BrowserModule, CoreModule, AppRoutingModule],
+  imports: [BrowserModule, CoreModule, AppRoutingModule, LoginModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
