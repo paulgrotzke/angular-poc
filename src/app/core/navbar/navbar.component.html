@@ -1,5 +1,16 @@
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-fixed-top navbar-right">
   <ul class="nav navbar-nav">
-    <li routerLinkActive="active" (click)="handleAppAuthState()"><a>{{ authIdenticator }}</a></li>
+    <li routerLinkActive="active"
+      style="cursor: pointer; font-weight: 600; border-style: solid; border-color: lightgrey; border-width: thin;">
+      <a routerLink='/'>search predefined idx</a>
+    </li>
+    <li routerLinkActive="active"
+      style="cursor: pointer; font-weight: 600; border-style: solid; border-color: lightgrey; border-width: thin;">
+      <a routerLink='/crudSearch'>crud & search
+        idx</a>
+      </li>
+    <li style="cursor: pointer; font-weight: 600; border-style: solid; border-color: lightgrey; border-width: thin;"
+      routerLinkActive="active" (click)="handleAppAuthState()"><a>{{
+        authIdenticator }}</a></li>
   </ul>
 </nav>

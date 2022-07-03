@@ -1,4 +1,5 @@
-import { Component, OnChanges } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core'
+import { Hotel } from 'app/shared/types'
 import { SearchService } from '../search/search.service'
 
 @Component({
@@ -6,8 +7,6 @@ import { SearchService } from '../search/search.service'
   templateUrl: './listing.component.html',
 })
 export class ListingComponent {
-  constructor(private searchService: SearchService) {}
-
-  hits = this.searchService.hits
-
+  @Input() hits: Hotel[] = []
+  constructor() {}
 }

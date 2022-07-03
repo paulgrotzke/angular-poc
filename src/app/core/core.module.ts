@@ -4,11 +4,12 @@ import { ModuleLoadedOnceGuard } from './module-loaded-once.guard'
 import { NavbarComponent } from './navbar/navbar.component'
 import { AuthService } from './services/auth.service'
 import { HttpClientModule } from '@angular/common/http'
+import { RouterModule } from '@angular/router'
 
 @NgModule({
   declarations: [NavbarComponent],
-  imports: [CommonModule, HttpClientModule],
-  exports: [NavbarComponent, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, RouterModule],
+  exports: [NavbarComponent, HttpClientModule, RouterModule],
   providers: [AuthService],
 })
 

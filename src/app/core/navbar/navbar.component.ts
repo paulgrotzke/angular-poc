@@ -8,7 +8,7 @@ import { AuthService } from '../services/auth.service'
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent implements OnInit, OnDestroy {
-  authIdenticator = 'Login'
+  authIdenticator = 'login'
   subscription: Subscription = {} as Subscription
 
   constructor(private router: Router, private authService: AuthService) {}
@@ -29,6 +29,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   private setAuthIdenticator() {
-    this.authIdenticator = this.authService.isAuthenticated ? 'Logout' : 'Login'
+    this.authIdenticator = this.authService.isAuthenticated ? 'logout' : 'login'
   }
 }

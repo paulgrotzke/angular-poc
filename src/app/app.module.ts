@@ -8,7 +8,7 @@ import { LoginModule } from './modules/login/login.module'
 import { SearchModule } from './modules/search/search.module'
 
 @NgModule({
-  imports: [BrowserModule, CoreModule, AppRoutingModule, LoginModule, SearchModule, ListingModule],
+  imports: [BrowserModule, CoreModule, AppRoutingModule, LoginModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
